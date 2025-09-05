@@ -1,0 +1,110 @@
+/* --- Estilos generales --- */
+QWidget {
+    background-color: #0c0f14; 
+    color: #d0d8e3; 
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* --- Encabezado (transparente) --- */
+QFrame#headerFrame {
+    background-color: transparent; /* Sin recuadro oscuro */
+    border: none;
+    padding: 15px;
+}
+
+/* --- Labels del encabezado --- */
+#tituloMateria {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6aa0d2; 
+}
+
+#tituloPractico {
+    font-size: 18px;
+    font-weight: 500;
+    color: #94a4b6;
+}
+
+#grupo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e06b6b;
+    margin-top: 10px;
+}
+
+#nombreIntegrante {
+    font-size: 15px;
+    color: #a8b3c3;
+    margin-top: 2px;
+}
+
+/* --- Logo en el encabezado --- */
+QLabel {
+    background-color: transparent; 
+}
+
+/* --- Área de carga (DropZone) --- */
+QFrame#DropZone {
+    border: 2px dashed #5e70a0; 
+    border-radius: 12px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+QFrame#DropZone:hover {
+    border-color: #a0b0ff;
+    background-color: rgba(94, 112, 160, 0.1);
+}
+
+QLabel#dragDropLabel {
+    color: #94a4b6; 
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* --- Botones --- */
+QPushButton {
+    background-color: #2c3a59; 
+    color: #d0d8e3;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    min-width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: #3e507d; 
+}
+
+QPushButton:pressed {
+    background-color: #202c40; 
+}
+
+/* --- Botón Salir --- */
+QPushButton#boton_salir {
+    background-color: #b74d4d; 
+}
+
+QPushButton#boton_salir:hover {
+    background-color: #d06b6b;
+}
+
+QPushButton#boton_salir:pressed {
+    background-color: #9a4040;
+}
+
+/* --- Menús y barra de estado --- */
+QMenuBar, QStatusBar {
+    background-color: #141820; 
+    color: #d0d8e3;
+}
+
+QMenu::item:selected {
+    background-color: #3e507d; 
+}
